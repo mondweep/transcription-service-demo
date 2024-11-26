@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sigma</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Demo Transcription Service by Mondweep (mondweep@gmail.com)</h1>
+    
+    <!-- Add microphone recording section -->
+    <div class="recording-controls">
+        <button id="startRecord">Start Recording</button>
+        <button id="stopRecord" disabled>Stop Recording</button>
+        <span id="recordingStatus"></span>
+    </div>
+
+    <!-- Keep existing file upload form -->
+    <form id="transcription-form">
+        <input type="file" id="audio-file" accept="audio/*" required>
+        <button type="submit">Transcribe File</button>
+    </form>
+    
+    <div id="transcription-result"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
