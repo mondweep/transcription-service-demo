@@ -1,24 +1,83 @@
-# Virtual Environment
-venv/
-env/
-.env
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# IDE
-.vscode/
+# Virtual Environment
+venv/
+ENV/
+env/
+myenv/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE specific files
 .idea/
-
-# Local development settings
-instance/
+.vscode/
+*.swp
+*.swo
+.DS_Store
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Audio files (if you don't want to track them)
+# Audio files
 *.wav
 *.mp3
 *.webm
+*.ogg
+*.flac
+
+# Logs
+*.log
+logs/
+log/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
